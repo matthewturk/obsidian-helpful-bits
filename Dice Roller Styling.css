@@ -1,0 +1,45 @@
+/* @settings
+
+name: Dice Roller
+id: dice-roller
+settings:
+    -
+        id: dice-button
+        title: Dice Button Color
+        type: variable-themed-color
+        opacity: false
+        format: hex
+        default-light: '#007AFF'
+        default-dark: '#2DB253'
+
+    -
+        id: dice-formula
+        title: Dice Formula Color
+        type: variable-themed-color
+        opacity: false
+        format: hex
+        default-light: '#007AFF'
+        default-dark: '#2DB253'
+
+    -
+        id: dice-result
+        title: Dice Result Color
+        type: variable-themed-color
+        opacity: false
+        format: hex
+        default-light: '#007AFF'
+        default-dark: '#2DB253'
+
+*/
+
+span.dice-roller-result {
+    color: var(--dice-result);
+}
+
+span.dice-roller-button {
+    color: var(--dice-button);
+}
+
+span.dice-roller-formula {
+    color: var(--dice-formula);
+}
