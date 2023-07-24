@@ -8,7 +8,12 @@ A few helpful bits for Obsidian.  This includes some scripts and CSS snippets I'
  - `arxivGrabber.js` - meant to be used with the `annotator` plugin, and `arxiv-annotate.md` as the templater template
  - `frontmatterKeyValues.js` - get all the known values for a given key in the frontmatter, querying only by a particular tag
  - `leafFinder.js` - find all the stem tags given a base tag
+ - `meeting-notes.md` - Meeting notes including attendees template
+ - `meeting-todo.md` - insert this while in a meeting and it will add a todo with an assigned person from the attendees list
  - `otherSelection.js` - add an `Other` option to suggester, and prompt if that's chosen
+ - `person-entry-header.md` - included in all person entries, to grab info and present it nicely
+ - `person-entry.md` - information about a person, including a dashboard of meetings they attended
+ - `quick-idea.md` - this creates a new 'quick idea' note for a project
  - `safeRenamer.js` - move something to another directory and rename it in one go, but avoid collisions and create folders.
  - `shuffler.js` - shuffle an array
  - `slugger.js` - turn something into a filesystem-safe slug
