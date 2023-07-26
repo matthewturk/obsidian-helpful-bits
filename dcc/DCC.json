@@ -1,0 +1,376 @@
+{
+  "blocks": [
+    {
+      "type": "inline",
+      "id": "69eab9eb9a88",
+      "properties": [],
+      "hasRule": true,
+      "nested": [
+        {
+          "type": "group",
+          "id": "eaeb6a3bdbf9",
+          "properties": [
+            "name",
+            "size",
+            "type",
+            "subtype",
+            "alignment"
+          ],
+          "nested": [
+            {
+              "type": "heading",
+              "id": "ea4aba895be9",
+              "properties": [
+                "name"
+              ],
+              "conditioned": true,
+              "size": 1
+            },
+            {
+              "type": "subheading",
+              "id": "9ba9381b9aa8",
+              "properties": [
+                "size",
+                "type",
+                "subtype",
+                "description"
+              ],
+              "conditioned": true,
+              "separator": " ",
+              "dice": false
+            }
+          ],
+          "conditioned": true
+        },
+        {
+          "type": "image",
+          "id": "cbbac9daa968",
+          "properties": [
+            "image"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "b918b93998ca",
+      "properties": [
+        "ac",
+        "hp",
+        "speed"
+      ],
+      "nested": [
+        {
+          "type": "property",
+          "id": "1b4a5a299afa",
+          "properties": [
+            "alignment"
+          ],
+          "fallback": "-",
+          "conditioned": true,
+          "display": "Alignment"
+        },
+        {
+          "type": "property",
+          "id": "4bbb995838ca",
+          "properties": [
+            "ac"
+          ],
+          "display": "Armor Class",
+          "conditioned": true
+        },
+        {
+          "type": "property",
+          "id": "d8da299b1a5a",
+          "properties": [
+            "hp"
+          ],
+          "display": "Hit Points",
+          "dice": true,
+          "diceProperty": "hit_dice",
+          "diceCallback": "return [{ text: monster[\"hit_dice\"] }]",
+          "conditioned": true
+        },
+        {
+          "type": "property",
+          "id": "cb1a6958cb8a",
+          "display": "Movement",
+          "properties": [
+            "movement"
+          ],
+          "conditioned": true
+        },
+        {
+          "type": "property",
+          "id": "fa5a78ca5a99",
+          "properties": [
+            "initiative"
+          ],
+          "fallback": "-",
+          "display": "Initiative",
+          "conditioned": true
+        },
+        {
+          "type": "property",
+          "id": "3bb84ab9ca69",
+          "properties": [
+            "action_value"
+          ],
+          "fallback": "-",
+          "display": "Action Roll",
+          "conditioned": true,
+          "dice": true,
+          "diceCallback": "return [{ text: monster[\"action_die\"] }]"
+        },
+        {
+          "type": "text",
+          "id": "dbabba9b7a48",
+          "properties": [
+            "saving_throws"
+          ],
+          "text": null,
+          "fallback": "nnn",
+          "dice": true,
+          "heading": "Saving Throws",
+          "conditioned": false,
+          "diceCallback": "return [\"Reflex: \",\n        {'text': `1d20 + ${monster['saving_throws']['reflex']}`},\n        \"\\nFortitude:\",\n        {'text': `1d20 + ${monster['saving_throws']['fortitude']}`},\n       \"\\nWillpower:\", \n        {'text': `1d20 + ${monster['saving_throws']['willpower']}`}];"
+        },
+        {
+          "type": "property",
+          "id": "ca2ab9786a0a",
+          "properties": [
+            "critical_die.table"
+          ],
+          "fallback": "-",
+          "display": "Critical Rolls",
+          "callback": "if (!monster.critical_die) return '';\nreturn `Roll ${monster.critical_die.formula} on Table ${monster.critical_die.table}`",
+          "conditioned": true
+        }
+      ],
+      "hasRule": true,
+      "conditioned": true
+    },
+    {
+      "type": "table",
+      "id": "b97969da290b",
+      "properties": [
+        "stats"
+      ],
+      "headers": [
+        "Str",
+        "Agi",
+        "Sta",
+        "Per",
+        "Int",
+        "Luck"
+      ],
+      "calculate": true,
+      "hasRule": true,
+      "conditioned": true,
+      "modifier": "return [undefined, undefined, undefined,\n\t    -3, -2, -2, -1, -1, -1, 0, 0, 0,\n        0, 1, 1, 1, 2, 2, 3][stat];"
+    },
+    {
+      "type": "group",
+      "id": "fb09183bb869",
+      "properties": [
+        "saves",
+        "skillsaves",
+        "damage_immunities",
+        "damage_resistances",
+        "damage_vulnerabilities",
+        "condition_immunities",
+        "cr",
+        "languages",
+        "senses"
+      ],
+      "nested": [
+        {
+          "type": "saves",
+          "id": "681baa29c9ab",
+          "display": "Saves",
+          "properties": [
+            "saves"
+          ],
+          "conditioned": true
+        },
+        {
+          "type": "saves",
+          "id": "79998b49f9e9",
+          "display": "Skills",
+          "properties": [
+            "skillsaves"
+          ],
+          "conditioned": true
+        },
+        {
+          "type": "property",
+          "id": "7808db183a19",
+          "display": "Damage Resistances",
+          "properties": [
+            "damage_resistances"
+          ],
+          "conditioned": true
+        },
+        {
+          "type": "property",
+          "id": "d8995adbcb68",
+          "display": "Damage Immunities",
+          "properties": [
+            "damage_immunities"
+          ],
+          "conditioned": true
+        },
+        {
+          "type": "property",
+          "id": "49a9f93a0838",
+          "display": "Condition Immunities",
+          "properties": [
+            "condition_immunities"
+          ],
+          "conditioned": true
+        },
+        {
+          "type": "property",
+          "id": "f9d8796acbaa",
+          "display": "Damage Vulnerabilities",
+          "properties": [
+            "damage_vulnerabilities"
+          ],
+          "conditioned": true
+        },
+        {
+          "type": "property",
+          "id": "691b8a9ad809",
+          "display": "Senses",
+          "properties": [
+            "senses"
+          ],
+          "conditioned": true
+        },
+        {
+          "type": "property",
+          "id": "79c90a8b3ae9",
+          "display": "Languages",
+          "properties": [
+            "languages"
+          ],
+          "fallback": "-",
+          "conditioned": true
+        }
+      ],
+      "conditioned": true,
+      "hasRule": true
+    },
+    {
+      "type": "traits",
+      "id": "bbd94ba8ea79",
+      "properties": [
+        "traits"
+      ],
+      "conditioned": true,
+      "dice": true
+    },
+    {
+      "type": "spells",
+      "id": "fb18aa1a0bca",
+      "properties": [
+        "spells"
+      ],
+      "conditioned": true,
+      "dice": true
+    },
+    {
+      "type": "traits",
+      "id": "4bcbe928bbdb",
+      "properties": [
+        "actions"
+      ],
+      "heading": "Actions",
+      "conditioned": true,
+      "dice": true
+    },
+    {
+      "type": "traits",
+      "id": "69285b7a1a2b",
+      "properties": [
+        "equipped_weapons"
+      ],
+      "fallback": "-",
+      "heading": "Combat Actions",
+      "conditioned": true,
+      "dice": true
+    },
+    {
+      "type": "group",
+      "id": "fafb1838f88a",
+      "properties": [],
+      "nested": [
+        {
+          "type": "property",
+          "id": "29d9d93a8aab",
+          "properties": [
+            "occupation"
+          ],
+          "fallback": "-",
+          "conditioned": true,
+          "display": "Occupation"
+        },
+        {
+          "type": "property",
+          "id": "195bf9d99bf9",
+          "properties": [
+            "tradegoods"
+          ],
+          "fallback": "-",
+          "display": "Trade Goods",
+          "conditioned": true
+        },
+        {
+          "type": "property",
+          "id": "79b87bfac939",
+          "properties": [
+            "trainedweapon"
+          ],
+          "fallback": "-",
+          "conditioned": true,
+          "display": "Trained Weapon"
+        },
+        {
+          "type": "text",
+          "id": "08bbcb086adb",
+          "properties": [
+            "equipment"
+          ],
+          "text": null,
+          "fallback": "-",
+          "dice": true,
+          "conditioned": true,
+          "heading": "Equipment",
+          "markdown": true
+        },
+        {
+          "type": "property",
+          "id": "db28fb99faea",
+          "properties": [
+            "starting_funds"
+          ],
+          "fallback": "-",
+          "display": "Starting Funds",
+          "conditioned": true
+        },
+        {
+          "type": "property",
+          "id": "fbba2a2ba9e8",
+          "properties": [
+            "lucky_sign"
+          ],
+          "fallback": "-",
+          "display": "Lucky Sign",
+          "conditioned": true
+        }
+      ]
+    }
+  ],
+  "name": "DCC",
+  "id": "f87b8a08996b"
+}

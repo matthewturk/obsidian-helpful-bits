@@ -26,3 +26,13 @@ These use the Style Settings plugin.
 
  - `Dice Roller Styling.css` - allow setting dice roller colors (for each of the three components) individually
  - `Disable Clicking.css` - allow disable clicking on "Alternate Checkmarks" from ITS-Theme.
+
+## DCC Stuff
+
+I wrote up a little bit of stuff to support [Dungeon Crawl Classics](https://goodman-games.com/) in the [javalent](https://plugins.javalent.com/) ecosystem.
+
+ - `dcc/DCC.json` - a statblock for DCC which, honestly, could probably use some work.
+ - `dcc/namegen.js` - a slightly modified version of [skeeto's namegen](https://github.com/skeeto/fantasyname/blob/master/ts/namegen.ts) that works in Obsidian.
+ - `dcc/zero-level-character.md` - a template to generate a single zero-level character.
+ - `dcc/zero-level-party.md` - a template to generate a party of zero-level characters and register it with the initiative tracker.
+ - `dcc/zeroLevel.js` - a script for using tables in your vault to make up a Zero-level character.  For instance, if you have notes named `Table 1-3 - Occupations` and `Table 1-2 - Lucky Sign` with the appropriate contents, it can query them.  One thing to note is that if you use multiple columns, make sure you expand your table because the dice roller can't do ranges with more than two columns.  This is called by the two templates above.
