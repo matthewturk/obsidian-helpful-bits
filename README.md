@@ -31,6 +31,8 @@ These use the Style Settings plugin.
 
 I wrote up a little bit of stuff to support [Dungeon Crawl Classics](https://goodman-games.com/) in the [javalent](https://plugins.javalent.com/) ecosystem.
 
+I should also note: I haven't actually played using these.  Maybe I will some day, but it's been really fun to use it as a way to learn more about Obsidian.
+
  - `dcc/DCC.json` - a statblock for DCC which, honestly, could probably use some work.
  - `dcc/namegen.js` - a slightly modified version of [skeeto's namegen](https://github.com/skeeto/fantasyname/blob/master/ts/namegen.ts) that works in Obsidian.
  - `dcc/zero-level-character.md` - a template to generate a single zero-level character.
