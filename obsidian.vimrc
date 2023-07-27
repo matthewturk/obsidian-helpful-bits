@@ -1,6 +1,3 @@
-" For use with the obsidian vimrc plugin.
-
-
 exmap surround_wiki surround [[ ]]
 exmap surround_double_quotes surround " "
 exmap surround_single_quotes surround ' '
@@ -48,3 +45,6 @@ map \tl :themelight
 
 exmap blockquote obcommand editor:toggle-blockquote
 map \bq :blockquote
+
+exmap runblocks obcommand execute-code:run-all-code-blocks-in-file
+map \ex :runblocks
