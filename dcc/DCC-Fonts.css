@@ -1,0 +1,57 @@
+
+.dcc-adventure .view-header-title {
+     font-family: "DuvallSmallCaps";
+ }
+ .dcc-adventure .cm-header-1
+ {
+     font-family: "DuvallSmallCaps" !important;
+ }
+ .dcc-adventure .cm-header-2
+ {
+     font-family: "DuvallSmallCaps" !important;
+ }
+ .dcc-adventure .cm-header-3
+ {
+     font-family: "DuvallSmallCaps" !important;
+ }
+ .dcc-adventure .cm-header-4
+ {
+     font-family: "DuvallSmallCaps" !important;
+ }
+ .dcc-adventure .cm-header-5
+ {
+     font-family: "DuvallSmallCaps" !important;
+ }
+ .dcc-adventure .cm-header-6
+ {
+     font-family: "DuvallSmallCaps" !important;
+ }
+
+ .dcc-adventure .markdown-preview-view .cm-header-6,h1
+ {
+     font-family: "DuvallSmallCaps" !important;
+ }
+ .dcc-adventure .markdown-preview-view .cm-header-6,h2
+ {
+     font-family: "DuvallSmallCaps" !important;
+ }
+ .dcc-adventure .markdown-preview-view .cm-header-6,h3
+ {
+     font-family: "DuvallSmallCaps" !important;
+ }
+ .dcc-adventure .markdown-preview-view .cm-header-6,h4
+ {
+     font-family: "DuvallSmallCaps" !important;
+ }
+ .dcc-adventure .markdown-preview-view .cm-header-6,h5
+ {
+     font-family: "DuvallSmallCaps" !important;
+ }
+ .dcc-adventure .markdown-preview-view .cm-header-6,h6
+ {
+     font-family: "DuvallSmallCaps" !important;
+ }
+
+ /* This is where I would put the embedded fonts, as well, in base64. 
+  * I'm not doing that here, however.
+  * */
