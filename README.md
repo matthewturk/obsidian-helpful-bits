@@ -26,6 +26,7 @@ These use the Style Settings plugin.
 
  - `Dice Roller Styling.css` - allow setting dice roller colors (for each of the three components) individually
  - `Disable Clicking.css` - allow disable clicking on "Alternate Checkmarks" from ITS-Theme.
+ - `canvas-stuff.css` - change border of canvas cards by setting `cssclass` in the frontmatter of a canvas card to `canvas-{style}` where `{style}` is one of the `border-style` values allowed in CSS.  (dotted, dashed, etc.)
 
 ## DCC Stuff
 

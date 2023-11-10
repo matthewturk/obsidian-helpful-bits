@@ -1,0 +1,129 @@
+/* @settings
+
+name: Canvas Card Styling
+id: canvas-card-styling
+settings:
+    -   
+        title: dotted width
+        description: The width of the dotted border
+        id: dotted-width
+        type: variable-number
+        default: 1
+        format: px
+    -   
+        title: dashed width
+        description: The width of the dashed border
+        id: dashed-width
+        type: variable-number
+        default: 1
+        format: px
+    -   
+        title: solid width
+        description: The width of the solid border
+        id: solid-width
+        type: variable-number
+        default: 1
+        format: px
+    -   
+        title: double width
+        description: The width of the double border
+        id: double-width
+        type: variable-number
+        default: 1
+        format: px
+    -   
+        title: groove width
+        description: The width of the groove border
+        id: groove-width
+        type: variable-number
+        default: 1
+        format: px
+    -   
+        title: ridge width
+        description: The width of the ridge border
+        id: ridge-width
+        type: variable-number
+        default: 1
+        format: px
+    -   
+        title: inset width
+        description: The width of the inset border
+        id: inset-width
+        type: variable-number
+        default: 1
+        format: px
+    -   
+        title: outset width
+        description: The width of the outset border
+        id: outset-width
+        type: variable-number
+        default: 1
+        format: px
+    -   
+        title: none width
+        description: The width of the none border
+        id: none-width
+        type: variable-number
+        default: 1
+        format: px
+    -   
+        title: hidden width
+        description: The width of the hidden border
+        id: hidden-width
+        type: variable-number
+        default: 1
+        format: px
+
+
+*/
+
+div.canvas-node-container:has(div.canvas-dotted) {
+  border-style: dotted;
+  border-width: var(--dotted-width);
+}
+
+div.canvas-node-container:has(div.canvas-dashed) {
+  border-style: dashed;
+  border-width: var(--dashed-width);
+}
+
+div.canvas-node-container:has(div.canvas-solid) {
+  border-style: solid;
+  border-width: var(--solid-width);
+}
+
+div.canvas-node-container:has(div.canvas-double) {
+  border-style: double;
+  border-width: var(--double-width);
+}
+
+div.canvas-node-container:has(div.canvas-groove) {
+  border-style: groove;
+  border-width: var(--groove-width);
+}
+
+div.canvas-node-container:has(div.canvas-ridge) {
+  border-style: ridge;
+  border-width: var(--ridge-width);
+}
+
+div.canvas-node-container:has(div.canvas-inset) {
+  border-style: inset;
+  border-width: var(--inset-width);
+}
+
+div.canvas-node-container:has(div.canvas-outset) {
+  border-style: outset;
+  border-width: var(--outset-width);
+}
+
+div.canvas-node-container:has(div.canvas-none) {
+  border-style: none;
+  border-width: var(--none-width);
+}
+
+div.canvas-node-container:has(div.canvas-hidden) {
+  border-style: hidden;
+  border-width: var(--hidden-width);
+}
+
