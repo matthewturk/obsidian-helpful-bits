@@ -28,9 +28,6 @@ title: Notes - <% projectName %> - <% tp.date.now() %>
 
 ## Action Items
 
-Use the metadata `assigned` like `(assigned:: Matt Turk)` in these.
-
-- [ ] 
 
 ## Other
 <% await tp.user.safeRenamer(tp, "projects/" + projectName, slugName + " - notes - " + tp.date.now()) %>
