@@ -1,0 +1,21 @@
+
+/* @settings
+
+name: Google Calendar Plugin Styling
+id: gcalendar-styling
+settings:
+    -   
+        title: Time Width
+        description: The width of the time field
+        id: gcal-time-width
+        type: variable-number
+        default: 150
+        format: px
+
+
+*/
+
+
+.gcal-schedule-time-container {
+    min-width: var(--gcal-time-width) !important;
+}
